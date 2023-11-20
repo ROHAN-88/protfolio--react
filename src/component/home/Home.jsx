@@ -23,7 +23,14 @@ const Home = () => {
   return (
     <>
       <div className="home-body">
-        <div style={{ display: "flex", gap: "2rem" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div className="home-image"></div>
 
           <div style={{ width: "400px" }}>
