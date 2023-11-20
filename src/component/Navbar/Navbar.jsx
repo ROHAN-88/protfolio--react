@@ -24,8 +24,8 @@ const Navbar = () => {
           <a href="#work">
             <li>PORTFOLIO</li>
           </a>
-          <a href="#contact">
-            <li>CONTACT</li>
+          <a href="/pdf/rohanshresthaCV.pdf" target="_blank">
+            <li>CV</li>
           </a>
         </ul>
       </div>

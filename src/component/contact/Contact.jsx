@@ -27,7 +27,10 @@ const Contact = () => {
         <i className="fa fa-instagram"></i>
         <div className="tooltip">Instagram</div>
       </a>
-      <a className="social-icon social-icon--linkedin">
+      <a
+        className="social-icon social-icon--linkedin"
+        href="www.linkedin.com/in/rohan-shrestha23"
+      >
         <i className="fa fa-linkedin"></i>
         <div className="tooltip">LinkedIn</div>
       </a>
