@@ -1,0 +1,5 @@
+.card-Hover:hover {
+  width: 350px;
+  height: 220px;
+  transition: 1s;
+}

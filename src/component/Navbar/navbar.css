@@ -1,0 +1,17 @@
+.navbar-ui a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-ui a::after {
+  content: "";
+  height: 2px;
+  background-color: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  width: 0%;
+}
+.navbar-ui a:hover::after {
+  width: 100%;
+}

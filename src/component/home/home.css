@@ -1,0 +1,27 @@
+.home-body {
+  margin-top: 1rem;
+  /* background-image: url(/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg); */
+  background-position: center;
+  background-size: cover;
+  /* background-image: co; */
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-image {
+  height: 15rem;
+  width: 15rem;
+
+  background: url(/profile-img/my-img-1.jpg);
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 50%;
+
+  /* border: 1px solid white; */
+}
