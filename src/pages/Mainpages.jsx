@@ -14,7 +14,7 @@ const Mainpages = () => {
       <Home />
       <About />
       <Work />
-      <Email />
+      {/* <Email /> */}
       {/* <Contact /> */}
     </>
   );

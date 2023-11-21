@@ -41,6 +41,7 @@ const Navbar = () => {
       position="fixed"
       sx={{
         background: "black",
+        padding: "0rem 2rem",
       }}
     >
       <Container maxWidth="xl">
