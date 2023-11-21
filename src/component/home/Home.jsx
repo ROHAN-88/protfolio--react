@@ -3,6 +3,7 @@ import Typed from "typed.js";
 import "./home.css";
 import styled from "styled-components";
 import Contact from "../contact/Contact";
+import { Box } from "@mui/material";
 const Home = () => {
   useEffect(() => {
     // Create a new instance of Typed.js
@@ -22,18 +23,19 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="home-body">
-        <div
-          style={{
-            display: "flex",
-            gap: "2rem",
+      <Box className="home-body">
+        <Box
+          sx={{
+            display: { xs: "flex", md: "flex" },
+            gap: "4rem",
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <div className="home-image"></div>
+          <Box className="home-image"></Box>
 
-          <div style={{ width: "400px" }}>
+          <Box style={{ width: "400px", textAlign: "center" }}>
             <h1>
               Hello! My name is <br />
               <span>Rohan Shrestha .</span>
@@ -41,12 +43,12 @@ const Home = () => {
               And, I am a <br />
               <Span id="typed-text"></Span>
             </h1>
-          </div>
-        </div>
-        <div style={{ marginTop: "3rem" }}>
+          </Box>
+        </Box>
+        <Box style={{ marginTop: "3rem" }}>
           <Contact />
-        </div>
-      </div>
+        </Box>
+      </Box>
     </>
   );
 };

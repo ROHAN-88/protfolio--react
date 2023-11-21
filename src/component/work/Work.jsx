@@ -29,7 +29,14 @@ const Work = () => {
       </div>
 
       {/* //! card  */}
-      <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "2rem",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
         {cardContent.map((item, index) => {
           return (
             <a href={item.link} target="_blank">

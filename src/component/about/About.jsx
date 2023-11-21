@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Box from "@mui/material/Box";
 const About = () => {
   const polldata = [
     {
@@ -10,13 +10,18 @@ const About = () => {
     },
     {
       id: 2,
-      pollName: "Bootstrap/SCSS",
-      percentage: "70%",
+      pollName: "Bootstrap",
+      percentage: "80%",
+    },
+    {
+      id: 8,
+      pollName: "SCSS",
+      percentage: "80%",
     },
     {
       id: 3,
       pollName: "J-query",
-      percentage: "70%",
+      percentage: "80%",
     },
     {
       id: 4,
@@ -35,12 +40,18 @@ const About = () => {
     },
     {
       id: 7,
-      pollName: "Node.js/Express.js",
+      pollName: "Node.js",
+      percentage: "50%",
+    },
+    {
+      id: 8,
+      pollName: "Express.js",
       percentage: "50%",
     },
   ];
+  //todo after in poll
   return (
-    <div id="about">
+    <Box id="about">
       <div
         style={{
           display: "flex",
@@ -48,6 +59,7 @@ const About = () => {
           alignItems: "center",
           justifyContent: "center",
           height: "100vh",
+          // width: "100vh",
         }}
       >
         <div
@@ -60,9 +72,19 @@ const About = () => {
         </div>
         {polldata.map((item, index) => {
           return (
-            <div key={item.id} style={{ marginTop: "1rem" }}>
+            <Box
+              key={item.id}
+              sx={{ marginTop: "1rem", width: { xs: "80%", md: "60%" } }}
+            >
               <p>{item.percentage}</p>
-              <div style={{ display: "flex", gap: "2rem" }}>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "2rem",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
                 <Poll>
                   <div
                     style={{
@@ -76,21 +98,26 @@ const About = () => {
                     }}
                   ></div>
                 </Poll>
-                <span style={{ width: "7rem", fontSize: "20px" }}>
+                <Box
+                  sx={{
+                    width: { xs: "7rem", sm: "10rem" },
+                    fontSize: { xs: "14px", sm: "19px" },
+                  }}
+                >
                   {item.pollName}{" "}
-                </span>
+                </Box>
               </div>
-            </div>
+            </Box>
           );
         })}
         {/* <div>//! photo  </div> */}
       </div>
-    </div>
+    </Box>
   );
 };
 
 const Poll = styled.div`
-  width: 30rem;
+  width: 100%;
   height: 1rem;
   // border: 1px red solid;
   background: #272829;
