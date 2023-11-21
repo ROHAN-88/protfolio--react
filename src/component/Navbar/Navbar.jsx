@@ -91,6 +91,7 @@ const Navbar = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                // gap: "2rem",
               }}
             >
               <a href="#about">
