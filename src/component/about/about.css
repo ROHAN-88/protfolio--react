@@ -1,14 +1,17 @@
+#about {
+  background: url(/about/background-img.jpg);
+  background-position: right;
+  background-attachment: fixed;
+}
 .container {
-  position: relative;
-  /* width: 97%; */
-  /* border: 1px solid red; */
   border-radius: 20px;
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+  /* display: block; */
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 20px;
 }
 
@@ -40,4 +43,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.text-work {
+  white-space: nowrap;
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    width: 200px;
+    height: 100px;
+  }
 }

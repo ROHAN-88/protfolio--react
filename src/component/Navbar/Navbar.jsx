@@ -99,7 +99,7 @@ const Navbar = () => {
               </a>
 
               <a href="#work">
-                <li>PORTFOLIO</li>
+                <li>WORK</li>
               </a>
 
               <a href="/pdf/rohanshresthaCV.pdf" target="_blank">
@@ -140,7 +140,7 @@ const Navbar = () => {
               </a>
 
               <a href="#work">
-                <li>PORTFOLIO</li>
+                <li>WORK</li>
               </a>
 
               <a href="/pdf/rohanshresthaCV.pdf" target="_blank">

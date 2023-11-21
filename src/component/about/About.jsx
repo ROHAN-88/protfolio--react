@@ -41,7 +41,7 @@ const About = () => {
       >
         <div
           style={{
-            color: "#F05941",
+            color: "#F4DFC8",
           }}
         >
           <p style={{ fontSize: "40px" }}>I am a Full-Stack Developer</p>
@@ -60,20 +60,12 @@ const About = () => {
           {polldata?.map((item, index) => {
             return (
               <div>
-                <div className="container">
-                  <img
-                    src={item.imageUrl}
-                    className="image"
-                    style={{
-                      width: "300px ",
-                      height: "200px",
-                      objectFit: "cover",
-                    }}
-                  />
+                <Box className="container">
+                  <img src={item.imageUrl} className="image" />
                   <div className="overlay">
                     <div className="text">{item.pollName}</div>
                   </div>
-                </div>
+                </Box>
               </div>
             );
           })}

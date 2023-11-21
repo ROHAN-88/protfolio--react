@@ -10,6 +10,7 @@ body {
   color: white;
   background: url(/background.jpg);
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 li {
