@@ -1,19 +1,16 @@
-import React from "react";
+import AdbIcon from "@mui/icons-material/Adb";
+import MenuIcon from "@mui/icons-material/Menu";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import "./navbar.css";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import React from "react";
 import styled from "styled-components";
+import "./navbar.css";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const pages = ["Products", "Pricing", "Blog"];
 
@@ -92,19 +89,35 @@ const Navbar = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                // gap: "2rem",
+                cursor: "pointer",
               }}
             >
-              <a href="#about">
-                <li>ABOUT</li>{" "}
-              </a>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-10}
+                duration={500}
+              >
+                <li style={{ margin: "3px 1rem" }}>ABOUT</li>{" "}
+              </Link>
 
-              <a href="#work">
-                <li>WORK</li>
-              </a>
+              <Link
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li style={{ margin: "3px 1rem" }}>WORK</li>{" "}
+              </Link>
 
-              <a href="/pdf/rohanshresthaCV.pdf" target="_blank">
-                <li>CV</li>
+              <a
+                href="/pdf/rohanshresthaCV.pdf"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <li style={{ margin: "3px 1rem" }}>CV</li>
               </a>
             </Menu>
           </Box>
@@ -135,14 +148,29 @@ const Navbar = () => {
               justifyContent: "flex-end",
             }}
           >
-            <ul style={{ display: "flex", gap: "2rem" }} className="navbar-ui">
-              <a href="#about">
+            <ul
+              style={{ display: "flex", gap: "2rem", cursor: "pointer" }}
+              className="navbar-ui"
+            >
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-10}
+                duration={500}
+              >
                 <li>ABOUT</li>{" "}
-              </a>
+              </Link>
 
-              <a href="#work">
-                <li>WORK</li>
-              </a>
+              <Link
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li>WORK</li>{" "}
+              </Link>
 
               <a href="/pdf/rohanshresthaCV.pdf" target="_blank">
                 <li>CV</li>
