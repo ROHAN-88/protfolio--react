@@ -136,6 +136,7 @@ const Navbar = () => {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: "20px",
               width: "auto",
             }}
           >

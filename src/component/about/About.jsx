@@ -28,15 +28,24 @@ const About = () => {
   ];
   //todo after in poll
   return (
-    <Box id="about">
-      <div
+    <Box
+      sx={{
+        height: { xs: "auto", md: "100vh" },
+        display: "flex",
+
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+      id="about"
+    >
+      <Box
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          // height: "100vh",
-          // width: "100vh",
+
+          paddingBottom: "3rem",
         }}
       >
         <Box
@@ -71,7 +80,7 @@ const About = () => {
             );
           })}
         </div>
-      </div>
+      </Box>
     </Box>
   );
 };

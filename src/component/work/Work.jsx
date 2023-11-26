@@ -62,7 +62,7 @@ const Work = () => {
                 </div>
                 <Box
                   sx={{
-                    width: { xs: "200px", sm: "300px" },
+                    width: { xs: "auto", sm: "300px" },
                     height: "100px",
                     fontSize: { xs: "15px", md: "18px" },
                     lineHeight: { xs: "", sm: "2rem" },
@@ -82,6 +82,8 @@ const Work = () => {
 };
 
 const Div = styled.div`
+  padding-top: 3rem;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
