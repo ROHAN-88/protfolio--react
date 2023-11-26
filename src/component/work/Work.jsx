@@ -24,8 +24,10 @@ const Work = () => {
   ];
 
   return (
-    <Div style={{ height: "100vh" }} id="work">
-      <div style={{ color: "#F4EAE0", marginBottom: "2rem" }}>
+    <Div style={{ height: "100svh" }} id="work">
+      <div
+        style={{ color: "#F4EAE0", marginBottom: "2rem", textAlign: "center" }}
+      >
         <p style={{ fontSize: "40px", fontWeight: "700" }}> My Work</p>
         <h3>During MY learning phase I have create website like</h3>
       </div>
@@ -49,6 +51,7 @@ const Work = () => {
                 sx={{
                   display: "flex",
                   gap: "3rem",
+                  flexDirection: { xs: "column", md: "row" },
                 }}
               >
                 <div className="container-work">

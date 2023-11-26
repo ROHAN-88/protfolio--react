@@ -39,14 +39,15 @@ const About = () => {
           // width: "100vh",
         }}
       >
-        <div
-          style={{
+        <Box
+          sx={{
             color: "#F4DFC8",
+            textAlign: "center",
           }}
         >
           <p style={{ fontSize: "40px" }}>I am a Full-Stack Developer</p>
           <h3>I am proficient in skill below </h3>
-        </div>
+        </Box>
         <div
           style={{
             display: "flex",
