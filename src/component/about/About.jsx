@@ -45,7 +45,7 @@ const About = () => {
           alignItems: "center",
           justifyContent: "center",
 
-          paddingBottom: "3rem",
+          padding: "3rem 0rem",
         }}
       >
         <Box

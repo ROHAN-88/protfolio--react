@@ -62,8 +62,9 @@ const Work = () => {
                 </div>
                 <Box
                   sx={{
-                    width: { xs: "auto", sm: "300px" },
+                    width: { xs: "270px", sm: "300px" },
                     height: "100px",
+
                     fontSize: { xs: "15px", md: "18px" },
                     lineHeight: { xs: "", sm: "2rem" },
                     textAlign: { xs: "center", md: "left" },
