@@ -24,7 +24,7 @@ const Work = () => {
   ];
 
   return (
-    <Div style={{ height: "100svh" }} id="work">
+    <Div id="work">
       <div
         style={{ color: "#F4EAE0", marginBottom: "2rem", textAlign: "center" }}
       >
@@ -56,7 +56,7 @@ const Work = () => {
               >
                 <div className="container-work">
                   <img src={item.imageSrc} className="img-work " />
-                  <div className="overlay">
+                  <div className="overlay-work">
                     <div className="text-work">{item.name}</div>
                   </div>
                 </div>
@@ -66,6 +66,8 @@ const Work = () => {
                     height: "100px",
                     fontSize: { xs: "15px", md: "18px" },
                     lineHeight: { xs: "", sm: "2rem" },
+                    textAlign: { xs: "center", md: "left" },
+                    marginBottom: "2rem",
                   }}
                 >
                   <p>{item.detail}</p>

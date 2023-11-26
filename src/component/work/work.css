@@ -24,7 +24,7 @@
   border-radius: 20px;
 }
 
-.overlay {
+.overlay-work {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -36,13 +36,13 @@
   transition: 0.5s ease;
 }
 
-.container:hover .overlay {
+.container-work:hover .overlay-work {
   bottom: 0;
   height: 100%;
   border-radius: 20px;
 }
 
-/* .text {
+.text-work {
   white-space: nowrap;
   color: white;
   font-size: 20px;
@@ -52,7 +52,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-} */
+}
 
 .text-work {
   white-space: nowrap;

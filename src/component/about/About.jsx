@@ -61,10 +61,10 @@ const About = () => {
           {polldata?.map((item, index) => {
             return (
               <div>
-                <Box className="container">
-                  <img src={item.imageUrl} className="img" />
-                  <div className="overlay">
-                    <div className="text">{item.pollName}</div>
+                <Box className="container-about">
+                  <img src={item.imageUrl} className="img-about" />
+                  <div className="overlay-about">
+                    <div className="text-about">{item.pollName}</div>
                   </div>
                 </Box>
               </div>
