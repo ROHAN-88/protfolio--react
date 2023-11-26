@@ -51,8 +51,8 @@ const Work = () => {
                   gap: "3rem",
                 }}
               >
-                <div className="container">
-                  <img src={item.imageSrc} className="image" />
+                <div className="container-work">
+                  <img src={item.imageSrc} className="img-work " />
                   <div className="overlay">
                     <div className="text-work">{item.name}</div>
                   </div>

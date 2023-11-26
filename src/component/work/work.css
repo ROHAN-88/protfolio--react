@@ -9,14 +9,14 @@
   height: 220px;
   transition: 1s;
 }
-.container {
+.container-work {
   position: relative;
   /* width: 97%; */
   /* border: 1px solid red; */
   border-radius: 20px;
 }
 
-.image {
+.img-work {
   /* display: block; */
   width: 300px;
   height: 200px;
@@ -42,7 +42,7 @@
   border-radius: 20px;
 }
 
-.text {
+/* .text {
   white-space: nowrap;
   color: white;
   font-size: 20px;
@@ -52,7 +52,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
+} */
 
 .text-work {
   white-space: nowrap;
@@ -67,8 +67,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .image {
-    width: 1500px;
-    height: 100px;
+  .img-work {
+    width: 200px;
+    height: 150px;
   }
 }

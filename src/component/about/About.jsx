@@ -61,7 +61,7 @@ const About = () => {
             return (
               <div>
                 <Box className="container">
-                  <img src={item.imageUrl} className="image" />
+                  <img src={item.imageUrl} className="img" />
                   <div className="overlay">
                     <div className="text">{item.pollName}</div>
                   </div>
